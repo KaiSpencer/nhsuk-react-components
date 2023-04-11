@@ -2,8 +2,8 @@
   "name": "nhsuk-react-components",
   "version": "2.2.1",
   "author": {
-    "email": "thomas.judd-cooper1@nhs.net",
     "name": "Thomas Judd-Cooper",
+    "email": "thomas.judd-cooper1@nhs.net",
     "url": "https://tomjuddcooper.co.uk"
   },
   "license": "MIT",
@@ -32,6 +32,7 @@
     "@typescript-eslint/eslint-plugin": "^4.23.0",
     "@typescript-eslint/parser": "^4.23.0",
     "babel-loader": "^8.2.2",
+    "chromatic": "^6.17.3",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
     "enzyme-to-json": "^3.6.2",
@@ -83,7 +84,8 @@
     "lint": "eslint 'src/**/*.{js,ts,tsx}' 'stories/**/*.{js,ts,tsx}' --fix",
     "lint:ci": "eslint 'src/**/*.{js,ts,tsx}' 'stories/**/*.{js,ts,tsx}'",
     "build-storybook": "storybook build",
-    "prepublishOnly": "yarn lint:ci && yarn test:ci && yarn storybook --smoke-test"
+    "prepublishOnly": "yarn lint:ci && yarn test:ci && yarn storybook --smoke-test",
+    "chromatic": "npx chromatic --exit-zero-on-changes"
   },
   "files": [
     "dist",
@@ -91,5 +93,7 @@
   ],
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
-  "main": "dist/index.js"
+  "main": "dist/index.js",
+  "readme": "ERROR: No README data found!",
+  "_id": "nhsuk-react-components@2.2.1"
 }
